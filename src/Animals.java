@@ -1,17 +1,44 @@
 public class Animals {
     String Name;
-    int age;
+    int Age;
+    AnimalType Type;
 
-    public Animals(String name, int age) {
+    public Animals(String name, int age, AnimalType type) {
         Name = name;
-        this.age = age;
+        Age = age;
+        Type = type;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int age) {
+        Age = age;
+    }
+
+    public AnimalType getType() {
+        return Type;
+    }
+
+    public void setType(AnimalType type) {
+        Type = type;
     }
 
     @Override
     public String toString() {
         return "Animals{" +
                 "Name='" + Name + '\'' +
-                ", age=" + age +
+                ", Age=" + Age +
+                ", Type=" + Type +
                 '}';
     }
 }
